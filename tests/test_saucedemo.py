@@ -7,7 +7,7 @@ import allure
 @allure.story('Успішний вхід користувача')
 @allure.severity(allure.severity_level.CRITICAL)
 def test_login_and_visible_title(page, url):
-    login_page = LoginPage(page=page, url=url, username='standard_user', password='secret_sauce')
+    login_page = LoginPage(page=page, url=url, username='standord_user', password='secret_sauce')
     main_page = ProductsPage(page)
     login_page.login()
     title = main_page.get_title()
